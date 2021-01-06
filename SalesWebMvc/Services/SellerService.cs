@@ -53,7 +53,7 @@ namespace SalesWebMvc.Services
             }
             catch(DbUpdateConcurrencyException e)
             {
-                throw new DbConcurrencyException("e.message");
+                throw new DbConcurrencyException(e.Message);
             }
 
         }
